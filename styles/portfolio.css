@@ -1,10 +1,127 @@
-h1 {
-  color: black;
-  font-family: "Playfair Display", serif;
+:root {
+  --secondary-color: #2e9da4;
+  --color-blue: #5CA7FF;
+  --background-grey: #E7E7E7;
+  --yellow-color:#FFDD65;
+  --var1: #2A7576;
+  --var2:#3EC4D5;
+  --var3: #E4FAFC;
+  --var4:#313439;
+  --var2-1:#F5F5F5;
+  --var2-2:#0BBEF2;
+  --var2-3: #252B3B;
+  --var3:#E6E6E7;
+  --var3-2: #2BA7E2;
+  --var3-3:#101524;
+  --var3-4:#E5E5E5;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+}
+body {
+  font-family: var(--default-font-family);
+} 
+
+h1, h2, h3,h4,h5,h6  {
+  font-family: var(--heading-font-family);
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+}
+h1{
+  font-size: 96px ;
   font-weight: bold;
 }
 
-p {
-  font-family: "Poppins", sans-serif;
+h3 {
+  font-size: 64px;
+  font-weight: 400;
+  text-align: center; 
+}
+
+h4 {
+  font-size: 50px ;
+  padding-top: 30px;
+}
+
+h6 {
+  color: var(--secondary-color);
+  font-size: 25px ;
+  font-weight: 900 ; 
+}
+
+/* p {
+  opacity: 70%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
   font-weight: normal;
+} */
+
+.hero {
+  box-sizing: border-box;
+  text-align: center;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.78) 100%), url(/images/back-home.png);
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+   url(/images/back-home.png);  */
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50%;
+  padding: 160px 0px 160px 0px;
+}
+
+.hero-title{
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  color: #FFFFFF;
+  font-weight: bold;
+  border: 1px solid black;
+ padding:  30px 70px;
+}
+.hero p {
+  opacity: 50%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 2;
+    font-weight: normal;
+}
+.hero h2 {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 2;
+  margin: 0px;
+  
+}
+.hero a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 600px;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  color: white;
+}
+
+.hero a:hover {
+  color: white;
+}
+
+
+.btn-branding{
+  border-radius: 4px;
+  background: #5CA7FF;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.bg-contact {
+  background-image: url("https://img.freepik.com/free-photo/creative-flat-lay-photo-workspace-desk_7861-978.jpg?w=1480&t=st=1650832315~exp=1650832915~hmac=1763d4efd7f9df99dfc41caae933472d49ebad768758c3fcee85abfccde4af4b");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
