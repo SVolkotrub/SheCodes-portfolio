@@ -1,7 +1,9 @@
 :root {
   --secondary-color: #2e9da4;
   --color-blue: #5CA7FF;
+  --color-blue-hover: #5091dc;
   --background-grey: #E7E7E7;
+  --color-purple:#B589E0;
   --yellow-color:#FFDD65;
   --var1: #2A7576;
   --var2:#3EC4D5;
@@ -23,15 +25,17 @@ body {
 
 h1, h2, h3,h4,h5,h6  {
   font-family: var(--heading-font-family);
-  color: white;
   text-align: center;
   margin-top: 0px;
 }
 h1{
-  font-size: 96px ;
+  font-size: 92px ;
+  color: white;
   font-weight: bold;
+  }
+h2{
+  font-size: 48px;
 }
-
 h3 {
   font-size: 64px;
   font-weight: 400;
@@ -49,13 +53,12 @@ h6 {
   font-weight: 900 ; 
 }
 
-/* p {
+p {
   opacity: 70%;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 30px;
   font-weight: normal;
-} */
+}
 
 .hero {
   box-sizing: border-box;
@@ -70,30 +73,31 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
   height: 50%;
-  padding: 160px 0px 160px 0px;
+  padding: 160px 0px;
 }
 
 .hero-title{
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
-  color: #FFFFFF;
   font-weight: bold;
   border: 1px solid black;
- padding:  30px 70px;
+  padding-bottom: 70px;
+  padding: 30px 0px;
 }
 .hero p {
   opacity: 50%;
   text-align: center;
   font-size: 24px;
   line-height: 2;
+  color: white;
     font-weight: normal;
 }
 .hero h2 {
   font-size: 36px;
   font-weight: bold;
-  line-height: 2;
+  line-height: 1.5;
   margin: 0px;
-  
+  color: white;
 }
 .hero a {
   text-decoration: none;
@@ -104,24 +108,69 @@ h6 {
   color: white;
 }
 
-.hero a:hover {
-  color: white;
-}
-
-
 .btn-branding{
   border-radius: 4px;
-  background: #5CA7FF;
+  background: var(--color-blue);
   color: white;
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
-
+.btn-branding:hover{
+  background: var(--color-blue-hover);
+}
+.text-project{
+  padding: 20px 20px;
+}
+.btn-learn-more{
+    color: var(--color-blue);
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 0px;
+}
+.btn-learn-more:hover{
+    color: var(--color-purple);
+}
+.picture-part{
+  background-color: var(--background-grey);
+}
+.img-homepage{
+      filter: grayscale(100%);
+}
+.img-homepage:hover{
+        filter: none;
+        transform: scale(102%);
+}
 .bg-contact {
   background-image: url("https://img.freepik.com/free-photo/creative-flat-lay-photo-workspace-desk_7861-978.jpg?w=1480&t=st=1650832315~exp=1650832915~hmac=1763d4efd7f9df99dfc41caae933472d49ebad768758c3fcee85abfccde4af4b");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 960px){
+  h1{
+    font-size: 52px;
+  }
+  h2{
+    font-size: 36px;
+  }
+  .text-project{
+      padding: 0px 10px;  
+    }
+  .hero {
+      padding: 60px 0px 60px 0px;
+    }
+  .btn-branding{
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  .hero h2{
+      font-size: 32px;
+    }
+  .hero p{
+    font-size: 18px;
+  }
+  
 }
