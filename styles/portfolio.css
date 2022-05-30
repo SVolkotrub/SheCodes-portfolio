@@ -36,21 +36,14 @@ h1{
 h2{
   font-size: 48px;
 }
-h3 {
-  font-size: 64px;
-  font-weight: 400;
-  text-align: center; 
-}
 
-h4 {
-  font-size: 50px ;
-  padding-top: 30px;
-}
 
 h6 {
-  color: var(--secondary-color);
-  font-size: 25px ;
+  color: var(--color-blue);
+  font-size: 22px ;
   font-weight: 900 ; 
+  line-height: 1.5;
+  font-family: var(--default-font-family);
 }
 
 p {
@@ -59,7 +52,19 @@ p {
   line-height: 30px;
   font-weight: normal;
 }
-
+.nav-link.active{
+    color: var(--color-blue) !important;
+}
+.nav-style{
+  display: flex;
+  justify-content: end;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.bg-dark{
+  background: black !important;
+  opacity: 95%;
+}
 .hero {
   box-sizing: border-box;
   text-align: center;
@@ -101,9 +106,8 @@ p {
 }
 .hero a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--color-blue);
   font-weight: 600px;
-  font-family: "Playfair Display", serif;
   font-size: 18px;
   color: white;
 }
@@ -115,7 +119,8 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 31px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); */
 }
 .btn-branding:hover{
   background: var(--color-blue-hover);
@@ -142,6 +147,14 @@ p {
         filter: none;
         transform: scale(102%);
 }
+.about-section{
+  padding: 100px 0px;
+}
+.about-section h2{
+  margin-top: 30px;
+  /* padding: 20px 20px; */
+}
+
 .bg-contact {
   background-image: url("https://img.freepik.com/free-photo/creative-flat-lay-photo-workspace-desk_7861-978.jpg?w=1480&t=st=1650832315~exp=1650832915~hmac=1763d4efd7f9df99dfc41caae933472d49ebad768758c3fcee85abfccde4af4b");
   height: 100%;
@@ -172,5 +185,7 @@ p {
   .hero p{
     font-size: 18px;
   }
-  
+  .about-section {
+    margin: 0px 20px;
+  }
 }
