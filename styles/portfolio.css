@@ -160,9 +160,7 @@ p {
   border: 2px solid black;
   color: black;
 }
-.btn-projects {
-  margin-top: 30px;
-}
+
 .text-project{
   padding: 20px 20px;
 }
@@ -229,6 +227,17 @@ p {
 }
 .media p:hover{
   color: var(--color-purple);
+}
+.footer-icon {
+  color: white;
+}
+.footer-icon:hover{
+  color: var(--color-blue);
+}
+
+.footer p{
+  color: white;
+  
 }
 @media (max-width: 960px){
   h1{
