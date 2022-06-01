@@ -23,7 +23,7 @@ body {
   font-family: var(--default-font-family);
 } 
 
-h1, h2, h3,h4,h5,h6  {
+h1, h2, h3,h5,h6  {
   font-family: var(--heading-font-family);
   text-align: center;
   margin-top: 0px;
@@ -40,7 +40,11 @@ h5{
   font-family: var(--default-font-family);
   opacity: 70%;
 }
-
+h4{
+  font-family: var(--default-font-family);
+  font-weight: 400;
+  font-size: 32px;
+}
 h6 {
   color: var(--color-blue);
   font-size: 22px ;
@@ -122,18 +126,39 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+  border: 2px solid var(--color-blue);
   box-shadow: 2px 2px 31px rgba(0, 0, 0, 0.2);
   /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); */
 }
 .projects-link{
   background: var(--color-blue);
+  border: 2px solid var(--color-blue);
+  margin: 0;
+  padding: 0;
+    
+}
+.projects-link a{
     color: white;
+    display: block;
     font-size: 18px;
-    margin: 0;
-    padding: 7px;
+    padding: 5px 0px;
+    text-decoration: none;
+    text-align: center;
+}
+.projects-link:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+  font-size: 18px;
+}
+.projects-link a:hover {
+  
+  color: black;
 }
 .btn-branding:hover{
-  background: var(--color-blue-hover);
+  background: white;
+  border: 2px solid black;
+  color: black;
 }
 .btn-projects {
   margin-top: 30px;
@@ -165,26 +190,60 @@ p {
 }
 .about-section h2{
   margin-top: 30px;
-  /* padding: 20px 20px; */
 }
 .tech-skills-description{
   margin: 0px;
 }
+.contact-content {
+  padding: 30px 30px;
+}
+.contact-content h2{
+  font-size: 62px;
+}
 .bg-contact {
   background-image: url("https://img.freepik.com/free-photo/creative-flat-lay-photo-workspace-desk_7861-978.jpg?w=1480&t=st=1650832315~exp=1650832915~hmac=1763d4efd7f9df99dfc41caae933472d49ebad768758c3fcee85abfccde4af4b");
-  height: 100%;
+  /* height: 100%; */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.icon-content{
+  color: var(--color-blue);
+}
+.media a{
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--color-blue);
+}
+.media a:hover {
+  text-decoration: underline;
+  color: var(--color-purple);
+}
+.media p{
+  font-size: 20px;
+  opacity: 100;
+  color: var(--color-blue);
+}
+.media p:hover{
+  color: var(--color-purple);
 }
 @media (max-width: 960px){
   h1{
     font-size: 52px;
   }
-  h2{
+  h2, .contact-content h2{
     font-size: 36px;
   }
-  .text-project{
+  .contact-content h2 {
+      margin: 0;
+    }
+  h4 {
+    font-size: 24px;
+  }
+  .text-project {
       padding: 0px 10px;  
     }
   .hero {
@@ -203,6 +262,12 @@ p {
   .about-section {
     margin: 0px 20px;
   }
+  .contact-content{
+      padding: 10px 10px;
+    }
+ .contact-content a, p{
+    font-size: 18px;
+ }
   .tech-skills-description {
       font-size: 9px;
 
