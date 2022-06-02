@@ -1,10 +1,9 @@
 :root {
   --secondary-color: #2e9da4;
   --color-blue: #5CA7FF;
-  --color-blue-hover: #5091dc;
   --background-grey: #E7E7E7;
   --color-purple:#B589E0;
-  --yellow-color:#FFDD65;
+  /* --yellow-color:#FFDD65;
   --var1: #2A7576;
   --var2:#3EC4D5;
   --var3: #E4FAFC;
@@ -15,7 +14,7 @@
   --var3:#E6E6E7;
   --var3-2: #2BA7E2;
   --var3-3:#101524;
-  --var3-4:#E5E5E5;
+  --var3-4:#E5E5E5; */
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -36,15 +35,16 @@ h1{
 h2{
   font-size: 48px;
 }
-h5{
-  font-family: var(--default-font-family);
-  opacity: 70%;
-}
-h4{
+h4 {
   font-family: var(--default-font-family);
   font-weight: 400;
   font-size: 32px;
 }
+h5{
+  font-family: var(--default-font-family);
+  opacity: 70%;
+}
+
 h6 {
   color: var(--color-blue);
   font-size: 22px ;
@@ -59,6 +59,8 @@ p {
   line-height: 30px;
   font-weight: normal;
 }
+
+/* style navigation */
 .nav-link.active{
     color: var(--color-blue) !important;
 }
@@ -72,6 +74,8 @@ p {
   background: black !important;
   opacity: 95%;
 }
+
+/* style hero */
 .hero {
   box-sizing: border-box;
   text-align: center;
@@ -128,7 +132,7 @@ p {
   padding: 15px 30px;
   border: 2px solid var(--color-blue);
   box-shadow: 2px 2px 31px rgba(0, 0, 0, 0.2);
-  /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); */
+  
 }
 .projects-link{
   background: var(--color-blue);
@@ -192,6 +196,7 @@ p {
 .tech-skills-description{
   margin: 0px;
 }
+/* style contact page */
 .contact-content {
   padding: 30px 30px;
 }
@@ -228,6 +233,8 @@ p {
 .media p:hover{
   color: var(--color-purple);
 }
+
+/* style footer */
 .footer-icon {
   color: white;
 }
